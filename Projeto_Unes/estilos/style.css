@@ -1,0 +1,69 @@
+body {
+    background: url(../fundo.png);
+    height: 1080px;
+}
+
+header {
+    margin-top: 30px;
+    margin-left: 180px;
+}
+
+.menu {
+    margin-left: 100px;
+    display: block;
+    position: relative;
+    left: 60%;
+}
+
+    .menu a {
+        margin-right: 10px;
+    }
+
+    .menu ul {
+        margin-top: -40px;
+    }
+
+    .menu a {
+        color: #6b74a9;
+        text-decoration: none;
+    }
+
+    .menu a:hover {
+        color: #3c3c5c;
+    }
+
+.corpo {
+    background-color: #efefef;
+}
+
+.capa {
+    padding-top: 25px;
+}
+
+    .capa img {
+        display: block;
+        position: relative;
+        left: 25%;
+    }
+
+.texto {
+    padding: 10px 360px;
+}
+
+    .texto p {
+        text-align: justify;
+    }
+
+ul li {
+    display: inline-block;
+    font-size: 15pt;
+}
+
+
+
+
+
+
+
+
+
