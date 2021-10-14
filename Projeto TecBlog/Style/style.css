@@ -1,0 +1,55 @@
+/* Limpando as formatções padrões */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #e6e6e6;
+}
+
+header {
+    height: 200px;
+    background: #ebb907;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Logo {
+    font-size: 3em;
+    color: #fefefe;
+    font-weight: bold;
+    position: relative;
+    top: 40px;
+    left: 865px;
+}
+
+.Logo strong {
+    color: grey;
+}
+
+.menu {
+    position: relative;
+    top: 85px;
+    margin-left: 660px;
+}
+
+.item-lista {
+    display: inline-block;
+    margin: 0px 10px;
+    font-size: 1.5em;
+}
+
+.item-lista a {
+    color: #fefefe;
+    transition: color 0.3s;
+}
+
+.item-lista a:hover {
+    color: grey;
+}
