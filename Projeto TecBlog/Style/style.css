@@ -104,6 +104,16 @@ header {
     padding: 15px 0px;
 }
 
+.texto a {
+    font-size: 18px;
+    color: #ebb907;
+    transition: color 0.3s;
+}
+
+.texto a:hover {
+    color: grey;
+}
+
 /* Barra Lateral */
 
 .lateral {
@@ -153,4 +163,13 @@ header {
 
 .lista a:hover {
     color: grey;
+}
+
+/* Rodapé / Footer */
+
+.footer {
+    background: #fefefe;
+    text-align: center;
+    padding: 15px;
+    clear: both;
 }
