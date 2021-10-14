@@ -85,7 +85,8 @@ header {
 }
 
 .principal .noticia{ 
-    margin-top: 20px;
+    margin-top: 5px;
+    margin-bottom: 16px;
 }
 .titulo {
     margin-bottom: 20px;
@@ -112,6 +113,7 @@ header {
 
 .texto a:hover {
     color: grey;
+    text-decoration: underline;
 }
 
 /* Barra Lateral */
@@ -129,10 +131,14 @@ header {
 
 .noticia-lat h3 {
     background: rgb(177, 174, 174);
+    color: #565656;
+    font-size: 22px;
     height: 35px;
     padding-top: 10px;
     padding-left: 20px;
+    border-radius: 10px;
 }
+
 
 .texto-lat {
     padding: 10px 0px;
@@ -146,6 +152,7 @@ header {
 
 .texto-lat a:hover {
     color: grey;
+    text-decoration: underline;
 }
 
 .noticia-lat p {
