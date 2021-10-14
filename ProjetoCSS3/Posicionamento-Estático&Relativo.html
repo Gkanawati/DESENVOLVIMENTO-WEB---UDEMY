@@ -5,35 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Objetos Flutuantes</title>
+    <title>Posicionamento (static, relative, absolute e fixed)</title>
 
     <style>
-        .Block {
+        body {
+            background: blue;
+        }
+
+        .container {
+            padding: 5px;
+            background: #f9f9f9;
+            width: 800px;
+            margin: 10px auto;
+        }
+
+        /*Static é o padrao para o parâmetro position*/
+
+        h1 {
+            position: static;
+        }
+
+        p {
+            margin: 5px;
+            width: 300px;
+            position: static;
+        }
+
+        /* O position tem 4 propriedades de deslocamento */
+        /*O Relative tem seu posicionamento baseado na posição inicial do elemento*/
+
+        .relative {
             border: 1px solid red;
-            margin: 5px;
-            height: 30px;
-            display: block;
+            position: relative;
+            /* top, right, bottom e left*/
+            top: -500px;
+            left: 470px;
         }
 
-
-        .Inline {
-            border: 1px solid blueviolet;
-            margin: 5px;
-            height: 30px;
-            display: inline;
-        }
-
-        .span {
+        .absolute {
             border: 1px solid blue;
-            margin: 5px;
-            height: 30px;
+            position: absolute;
+            top: 240px;
+            left: 560px
         }
 
-        .Inline-Block {
-            border: 1px solid black;
-            margin: 5px;
-            height: 30px;
-            display: inline-block;
+        /*O posicionamento fixo é fixo independente da rolagem da pagina,
+        fica fixo na tela*/
+
+        .fixed {
+            border: 1px solid orange;
+            position: fixed;
+            top: 20px;
+            left: 560px
         }
     </style>
 
@@ -42,54 +65,51 @@
 
 <body>
 
-    <div class="Block">
-        BLOCK 1
-    </div>
-    <div class="Block">
-        BLOCK 2
-    </div>
-    <div class="Block">
-        BLOCK 3
-    </div>
-
-    <br>
-    <HR>
-    <br>
-
-    <div class="Inline">
-        INLINE 1
-    </div>
-    <div class="Inline">
-        INLINE 2
-    </div>
-    <div class="Inline">
-        INLINE 3
-    </div>
-
-    <!--O SPAN FUNCIONA COMO UMA DIV COM DISPLAY INLINE-->
-    
-    <span class="span">
-        INLINE 1
-    </span>
-    <span class="span">
-        INLINE 2
-    </span>
-    <span class="span">
-        INLINE 3
-    </span>
-
-    <br>
-    <HR>
-    <br>
-
-    <div class="Inline-Block">
-        INLINE 1
-    </div>
-    <div class="Inline-Block">
-        INLINE 2
-    </div>
-    <div class="Inline-Block">
-        INLINE 3
+    <div class="container">
+        <h1>Posicionamento</h1>
+        <p>Mauris imperdiet lectus vel mi pretium efficitur. Quisque gravida feugiat eros nec bibendum. Morbi dignissim
+            tristique auctor. Curabitur nec magna lorem. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. Vestibulum posuere gravida leo, in congue nisi. Integer massa odio,
+            suscipit in sem nec, pellentesque fermentum leo. Donec tincidunt, felis eget facilisis interdum, lacus lorem
+            pulvinar turpis.</p>
+        <p>Mauris imperdiet lectus vel mi pretium efficitur. Quisque gravida feugiat eros nec bibendum. Morbi dignissim
+            tristique auctor. Curabitur nec magna lorem. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. Vestibulum posuere gravida leo, in congue nisi. Integer massa odio,
+            suscipit in sem nec, pellentesque fermentum leo. Donec tincidunt, felis eget facilisis interdum, lacus lorem
+            pulvinar turpis.</p>
+        <p class="fixed">Mauris imperdiet lectus vel mi pretium efficitur. Quisque gravida feugiat eros nec bibendum.
+            Morbi dignissim
+            tristique auctor. Curabitur nec magna lorem. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. Vestibulum posuere gravida leo, in congue nisi. Integer massa odio,
+            suscipit in sem nec, pellentesque fermentum leo. Donec tincidunt, felis eget facilisis interdum, lacus lorem
+            pulvinar turpis.</p>
+        <p>Mauris imperdiet lectus vel mi pretium efficitur. Quisque gravida feugiat eros nec bibendum. Morbi dignissim
+            tristique auctor. Curabitur nec magna lorem. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. Vestibulum posuere gravida leo, in congue nisi. Integer massa odio,
+            suscipit in sem nec, pellentesque fermentum leo. Donec tincidunt, felis eget facilisis interdum, lacus lorem
+            pulvinar turpis.</p>
+        <p>Mauris imperdiet lectus vel mi pretium efficitur. Quisque gravida feugiat eros nec bibendum. Morbi dignissim
+            tristique auctor. Curabitur nec magna lorem. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. Vestibulum posuere gravida leo, in congue nisi. Integer massa odio,
+            suscipit in sem nec, pellentesque fermentum leo. Donec tincidunt, felis eget facilisis interdum, lacus lorem
+            pulvinar turpis.</p>
+        <p>Mauris imperdiet lectus vel mi pretium efficitur. Quisque gravida feugiat eros nec bibendum. Morbi dignissim
+            tristique auctor. Curabitur nec magna lorem. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. Vestibulum posuere gravida leo, in congue nisi. Integer massa odio,
+            suscipit in sem nec, pellentesque fermentum leo. Donec tincidunt, felis eget facilisis interdum, lacus lorem
+            pulvinar turpis.</p>
+        <p class="relative">Mauris imperdiet lectus vel mi pretium efficitur. Quisque gravida feugiat eros nec bibendum.
+            Morbi dignissim
+            tristique auctor. Curabitur nec magna lorem. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. Vestibulum posuere gravida leo, in congue nisi. Integer massa odio,
+            suscipit in sem nec, pellentesque fermentum leo. Donec tincidunt, felis eget facilisis interdum, lacus lorem
+            pulvinar turpis.</p>
+        <p class="absolute">Mauris imperdiet lectus vel mi pretium efficitur. Quisque gravida feugiat eros nec bibendum.
+            Morbi dignissim
+            tristique auctor. Curabitur nec magna lorem. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. Vestibulum posuere gravida leo, in congue nisi. Integer massa odio,
+            suscipit in sem nec, pellentesque fermentum leo. Donec tincidunt, felis eget facilisis interdum, lacus lorem
+            pulvinar turpis.</p>
     </div>
 
 </body>
