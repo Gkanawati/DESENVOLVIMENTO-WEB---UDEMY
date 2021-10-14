@@ -1,3 +1,4 @@
+
 /* Limpando as formatções padrões */
 
 * {
@@ -11,13 +12,21 @@ body {
     background: #e6e6e6;
 }
 
+a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: grey;
+}
+
+/* Cabeçalho */
+
 header {
     height: 200px;
     background: #ebb907;
-}
-
-a {
-    text-decoration: none;
+    text-align: center;
 }
 
 .Logo {
@@ -26,7 +35,6 @@ a {
     font-weight: bold;
     position: relative;
     top: 40px;
-    left: 865px;
 }
 
 .Logo strong {
@@ -36,7 +44,6 @@ a {
 .menu {
     position: relative;
     top: 85px;
-    margin-left: 660px;
 }
 
 .item-lista {
@@ -46,10 +53,104 @@ a {
 }
 
 .item-lista a {
+    padding: 10px;
     color: #fefefe;
     transition: color 0.3s;
+    transition: background 0.3s;
 }
 
 .item-lista a:hover {
+    color: grey;
+    background: #fefefe;
+}
+
+/* Corpo da página */
+
+.corpo {
+    width: 1250px;
+    margin: 20px auto;
+}
+
+.vazio {
+    clear: both;
+}
+
+.principal {
+    width: 800px;
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 12px;
+    float: left;
+    background: #fefefe;
+}
+
+.principal .noticia{ 
+    margin-top: 20px;
+}
+.titulo {
+    margin-bottom: 20px;
+}
+
+.titulo h1 {
+    color: grey;
+}
+
+.data-post {
+    font-size: 17px;
+    color: rgb(177, 174, 174);
+}
+
+.texto {
+    padding: 15px 0px;
+}
+
+/* Barra Lateral */
+
+.lateral {
+    width: 350px;
+    background: #fefefe;
+    float: right;
+    border-radius: 12px;
+}
+
+.noticia-lat {
+    padding: 10px 20px;
+}
+
+.noticia-lat h3 {
+    background: rgb(177, 174, 174);
+    height: 35px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.texto-lat {
+    padding: 10px 0px;
+    border-bottom: 1px solid grey;
+}
+
+.texto-lat a {
+    color: #ebb907;
+    transition: color 0.3s;
+}
+
+.texto-lat a:hover {
+    color: grey;
+}
+
+.noticia-lat p {
+    margin-top: 10px;
+}
+
+.lista {
+    list-style: none;
+}
+
+.lista a {
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.lista a:hover {
     color: grey;
 }
