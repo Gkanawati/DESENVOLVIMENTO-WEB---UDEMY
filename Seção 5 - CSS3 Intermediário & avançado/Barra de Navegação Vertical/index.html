@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Vertical</title>
+
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .teste {
+            margin: 0;
+            padding: 5px;
+            list-style-type: none;
+        }
+
+        /* Lista Simples */
+
+        .liEx {
+            padding: 8px 20px;
+            background: url(images/seta.png) no-repeat left;
+        }
+
+
+        /*Menu Vertical */
+
+        .menuVert {
+            padding: 0px;
+            list-style: none;
+        }
+
+        li a {
+            display: block;
+            width: 200px;
+            height: 40px;
+            text-decoration: none;
+            text-indent: 33px;
+            line-height: 2.6;
+            color: #777777;
+            background: #f7b600 url(images/menu.png) no-repeat right;
+            transition: background 0.3s;
+        }
+
+        li a:hover {
+            background-position: left bottom;
+            background-color: #f99200;
+        }
+
+         /* Selecionando páginas */
+
+         #Home .home a,
+         #sobre .sobre a,
+         #servicos .servicos a,
+         #noticias .noticias a,
+         #contato .contato a  {
+            background-position: left bottom;
+            background-color: #f99200;
+        }
+    </style>
+</head>
+
+<body id="Home">
+
+    <h2>Lista de Atividades</h2>
+    <ul class="teste">
+        <li class="liEx">Ver a Bia</li>
+        <li class="liEx">Ir ao mercado</li>
+        <li class="liEx">Ser Feliz</li>
+        <li class="liEx">Estudar</li>
+        <li class="liEx">Assistir Série</li>
+        <li class="liEx">Treinar</li>
+    </ul>
+
+    <hr>
+
+    <h2>Home</h2>
+
+    <ul class="menuVert">
+        <li class="home">
+            <a href="index.html">Home</a>
+        </li>
+        <li class="sobre">
+            <a href="sobre.html">Sobre</a>
+        </li>
+        <li class="servicos">
+            <a href="servicos.html">Serviços</a>
+        </li>
+        <li class="noticias">
+            <a href="noticias.html">Notícias</a>
+        </li>
+        <li class="contato">
+            <a href="contato.html">Contato</a>
+        </li>
+    </ul>
+
+
+
+
+
+</body>
+
+</html>
