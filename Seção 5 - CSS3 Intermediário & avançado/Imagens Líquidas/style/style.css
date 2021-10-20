@@ -1,0 +1,95 @@
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #f2f2f2;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    min-width: 720px;
+    max-width: 1150px;
+}
+
+#marca {
+    height: 250px;
+    background: #225992 url(../images/cabecalho2.jpg) no-repeat center;
+    text-align: center;
+    line-height: 250px;
+}
+
+#conteudo {
+    width: 73%;
+    float: right;
+    padding: 10px 10px 10px 10px;
+}
+
+#conteudoPrinc {
+    width: 60%;
+    float: left;
+}
+
+#conteudoPrinc img {
+    width: 96%;
+    padding: 2%;
+    max-width: 600px;
+}
+
+#conteudoSec {
+    width: 25%;
+    float: right;
+    background: #d1d1d1;
+    padding: 10px;
+}
+
+#navegacao {
+    width: 22%;
+    float: left;
+}
+
+#rodape {
+    clear: both;
+    background: #c4c4c4;
+    text-align: center;
+    padding: 5px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul a {
+    display: block;
+    text-decoration: none;
+    color: blue;
+    width: 90%;
+    height: 30px;
+    padding: 18px 0px 10px 10px;
+    transition: color 0.2s;
+}
+
+ul a:hover {
+    color: rgb(73, 131, 240);
+}
+
+#menuVert {
+    list-style: none;
+}
+
+.itemVert {
+    border-bottom: 2px solid grey;
+    background: rgb(73, 131, 240);
+    transition: background 0.4s;
+}
+
+.itemVert:hover {
+    background: blue;
+    color: rgb(73, 131, 240);
+}
+
+.primeiro {
+    border-top: 2px solid grey;
+}
+
