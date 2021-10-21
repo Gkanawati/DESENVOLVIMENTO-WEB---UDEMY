@@ -1,79 +1,307 @@
-    body {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        background: #fff url(../image/fundo.png) repeat-x;
-    }
-    
-    #container {
-        width: 750px;
-        margin: 0 auto
-    }
-    
-    #topo {
-        height: 150px;
-        padding-top: 25px;
-        background: url(../image/detalhe-topo.png) no-repeat top right;
-    }
-    
-    .logo {
-        width: 152px;
-        height: 66px;
-        background: url(../image/logo.png);
-        margin-bottom: 0px;
-        text-indent: -3000px;
-    }
-    /* Menu Navigation*/
-    
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-    
-    #topo ul {
-        background: #b10333;
-        margin-top: 30px;
-        float: left;
-    }
-    
-    #topo ul li {
-        padding: 10px;
-        float: left;
-        background: url(../image/divisor.png) repeat-y left center;
-    }
-    
-    #topo ul .primeiro {
-        background: none;
-    }
-    
-    #topo li a {
-        font-size: 0.94em;
-        display: block;
-        padding: 0.5em 1.2em;
-        transition: all 0.3s;
-        line-height: 1em;
-        text-decoration: none;
-        color: #fff;
-    }
-    
-    #topo li a:hover {
-        text-decoration: none;
-        color: #69001d;
-    }
+* {
+    margin: 0;
+    padding: 0;
+}
 
-    body.home #navegacao a#home,
-    body.brasil #navegacao a#brasil,
-    body.internacional #navegacao a#internacional,
-    body.economia #navegacao a#economia,
-    body.saude #navegacao a#saude,
-    body.ciencia #navegacao a#ciencia,
-    body.fotos #navegacao a#fotos {
-        color: #fff;
-        background: #de003e;
-        cursor: pointer;
-    }
+body {        
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #fff url(../image/fundo.png) repeat-x;
+}
     
-    .menu {
-        list-style-type: none;
-        margin: 10 auto;
-        float: left;
-    }
+#container {
+    width: 870px;
+    margin: 0 auto
+}
+    
+#topo {
+    height: 150px;
+    padding-top: 25px;
+    background: url(../image/detalhe-topo.png) no-repeat top right;
+}
+    
+.logo {
+    width: 152px;
+    height: 66px;
+    background: url(../image/logo.png);
+    margin-bottom: 0px;
+    text-indent: -3000px;
+    margin-top: 0;
+}
+
+/* Menu Navigation*/
+    
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    
+#topo ul {
+    background: #b10333;
+    margin-top: 30px;
+    float: left;
+}
+    
+#topo ul li {
+    padding: 10px;
+    float: left;
+    background: url(../image/divisor.png) repeat-y left center;
+}
+    
+#topo ul .primeiro {
+    background: none;
+}
+    
+#topo li a {
+    font-size: 0.94em;
+    display: block;
+    padding: 0.2em 0.7em;
+    transition: all 0.3s;
+    line-height: 1em;
+    text-decoration: none;
+    color: #fff;
+}
+    
+#topo li a:hover {
+    text-decoration: none;
+    color: #69001d;
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.fotos #navegacao a#fotos {
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+}
+
+body.home #navegacao li#home,
+body.brasil #navegacao li#brasil,
+body.internacional #navegacao li#internacional,
+body.economia #navegacao li#economia,
+body.saude #navegacao li#saude,
+body.ciencia #navegacao li#ciencia,
+body.fotos #navegacao li#fotos {
+    font-size: 18px;
+}
+    
+.menu {
+    list-style-type: none;
+    margin: 10 auto;
+    float: left;
+}
+
+/* Configura o Layout em 3 colunas */
+
+#conteudo {
+    background: #f5f5f5;
+    margin-top: 60px;
+}
+
+#lateral {
+    width: 213px;
+    float: left;
+    margin: 0px 0 20px -896px;
+}
+
+#primario {
+    width: 325px;
+    float: left;
+    margin: 0 0 20px 195px;
+}
+
+#duas_colunas #primario {
+    width: 555px;
+}
+
+#uma_coluna #primario {
+    width: 750px;
+    margin: 0 0 20px 0;
+}
+
+
+#secundario {
+    width: 325px;
+    float: left;
+    margin: 0 0 20px 15px;
+}
+
+/* Caixa Conteudo */
+
+.caixa {
+    margin: 10px 0;
+    padding: 5px;
+    background: #f3f3f3 url(../image/fundo-caixa.png);
+}
+
+.caixa h2 {
+    font-size: 1.2em;
+    background: #294c71;
+    color: #fff;
+    padding: 5px
+}
+
+.caixa-conteudo {
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/* Conteudo Primario */
+
+h3 {
+    text-transform: uppercase; 
+    display: inline;
+    font-size: 0.8em;
+    padding: 6px;
+}
+
+.destaque h3 {
+    background: #b10333;
+    color: #fff;
+}
+
+.destaque a {
+    color: #de003e;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+/* Formatando lista e notícias */
+
+#lista_noticias li {
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 65px;
+    transition: all 0.2s;
+}
+
+#lista_noticias li:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+#lista_noticias li a img {
+    float: left;
+    margin: 5px;
+    width: 27%;
+}
+
+#lista_noticias a {
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+#lista_noticias li a h3 {
+    font-size: 0.85em;
+    padding: 0;
+    color: #3e7ab9;
+}
+
+#lista_noticias li a p {
+    font-size: 0.75em;
+    color: #000;
+}
+
+/* Conteudo Lateral */
+
+#lateral ul a {
+    text-decoration: none;
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    border-bottom: 1px solid #f3f3f3;
+    transition: all 0.2s;
+}
+
+#lateral ul a:hover {
+    background: #f9f9f9 url(../image/marcador.png) no-repeat left center;
+    padding-left: 20px;
+    color: #a1a1a1;
+}
+
+/* Formulários */
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input {
+    font-size: 0.9em;
+    background: #fff;
+    padding: 5px;
+    width: 146px;
+    border: 1px solid #a1a1a1;
+    border-radius: 0.3rem;
+}
+
+input.submit {
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+    margin-top: 5px;
+}
+
+/* Formatando imagens */
+
+img {
+    border: 2px solid #dfdfdf
+}
+
+.imagem-principal {
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+
+/* Footer (Rodape) */
+
+footer {
+    clear: both;
+    background: #294c71;
+}
+
+footer #rodape {
+    width: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+/* Configurando outras páginas */
+
+
+/* Configurações para duas Colunas*/
+
+#duas_colunas #lista_noticias li a img {
+    float: left;
+    margin: 5px;
+    width: 15%;
+}
+
+#duas_colunas #lateral {
+    width: 213px;
+    float: left;
+    margin: 0px 0 20px -785px;
+}
+
+#duas_colunas #lista_noticias li a p {
+    font-size: 0.9em;
+    color: #000;
+}
+
+/* Configurando para uma Coluna */
+#uma_coluna #lista_noticias li a img {
+    float: left;
+    margin: 5px;
+    width: 11%;
+}
